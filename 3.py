@@ -6,9 +6,10 @@ for i in range(num):
     value = input()
     dict[key] = value
 print(dict)
+
 arg = input()
-for key in dict:
+for key, value in dict.items():
     if arg == key:
-        print(value-1)
-
-
+        print(dict[key])
+    elif arg == value:
+        print(key)
