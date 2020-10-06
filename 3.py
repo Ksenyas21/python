@@ -5,11 +5,9 @@ for i in range(num):
     key = input()
     value = input()
     dict[key] = value
+    dict[value] = key
 print(dict)
 
-arg = input()
-for key, value in dict.items():
-    if arg == key:
-        print(dict[key])
-    elif arg == value:
-        print(key)
+arg = input('Enter word- ')
+if dict[arg]:
+    print(key)
