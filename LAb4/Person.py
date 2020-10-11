@@ -1,7 +1,6 @@
 from datetime import datetime
+import math
 class Person():
-
-
 
     def __init__(self, firsName, lastName, thirdName, birth):
         self.firsName = firsName
@@ -14,6 +13,6 @@ class Person():
         return name.title()
 
     def calculate_age(self):
-        today = date.today()
+        today = datetime.today()
         return today.year - self.birth.year - ((today.month, today.day) < (self.birth.month, self.birth.day))
 
